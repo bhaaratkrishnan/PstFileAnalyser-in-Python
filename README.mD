@@ -1,3 +1,3 @@
-### Python PST Analyser
+# Python PST Analyser
 Install LibPff before running the script
-# pip install libpff-python
+### pip install libpff-python
