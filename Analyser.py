@@ -2,8 +2,6 @@ def pstAnalyserPy(fileName):
   import sys
   import pypff
   import os
-  from collections import Counter
-  import argparse
   import pandas as pd
   def processMessage(message):
     return {
