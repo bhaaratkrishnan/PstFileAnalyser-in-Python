@@ -1,6 +1,6 @@
 def pstAnalyserPy(fileName):
-  import pypff
   import sys
+  import pypff
   import os
   from collections import Counter
   import argparse
