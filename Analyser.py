@@ -46,3 +46,18 @@ def pstAnalyserPy(fileName):
   except:
     return
   folderTraverse(root)
+ def printPst(folderName):
+  import pandas as pd
+  import os
+  root = folderName
+  sub_folders = os.listdir(root)
+  if sub_folders == 0:
+    return
+  tab_space = "\t"
+  print(root)
+  for file in sub_folders:
+    file_dir = root+"/"+file
+    print(tab_space+" - " + file)
+    df = pd.read_csv(file_dir)
+    for index,row in df.iterrows():
+      print(tab_space*2 +" - "+ "Sender : "+row['sender']+" | Subject : "+row['subject'])
